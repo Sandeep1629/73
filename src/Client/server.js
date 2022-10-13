@@ -85,6 +85,6 @@ res.json(exist);
         return res.status(500).send("server erroe")
     }
 })
-  app.listen(5000,()=>{
+  app.listen(process.env.port||5000,()=>{
     console.log("server is runnig")
   })
