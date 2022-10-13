@@ -56,7 +56,7 @@ let payload={
         id : exist.id  
     }
 }
-jwt.sign(payload,'jwtSecret',{expiresIn:3600000},
+jwt.sign(payload,'jwtSecret',{expiresIn:360000000000000},
     (err,token)=>
     {
         if(err) throw err;
